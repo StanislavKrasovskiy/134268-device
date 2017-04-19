@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <img src="http://placehold.it/150x100" width="" height="" alt="Магазин Device">
+        <div class="user-block">
+          <div class="user-block-search">
+            <input type="text" name="search" value="Поиск по сайту">
+          </div>
+            <a class="user-block-person" href="#">Валентин Петухов</a>
+            <a class="user-block-log-out active" href="#">Выйти</a>
+            <a class="user-block-compare" href="#">Сравнить</a>
+            <a class="user-block-basket" href="#">Корзина</a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-items">
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">Каталог товаров</a> <!--Надо ли добавить "+" еще одним пунктом?-->
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">Гарантия</a>
+            </li>
+            <li class="main-nav-item">
+              <a class="main-nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="sub-nav-items"> <!--Выпад. меню при нажатии на "+"-->
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Моноподы для селфи</a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Экшн-камер</a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Умные часы</a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="sub-nav-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="main-title">Моноподы для селфи</h1>
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs-item"><a href="#">Главная</a></li>
+        <li class="bread-crumbs-item"><a href="#">Каталог товаров</a></li>
+        <li class="bread-crumbs-item"><a href="#">Моноподы для селфи</a></li>
+      </ul>
+      <div class="catalog-filter-sort"> <!--Контейнер содержит контейнер Фильтр и контейнер Сортировка -->
+        <div class="catalog-filter">
+          <h3 class="catalog-header">Фильтр:</h3>
+          <div class="catalog-filter-border"></div>
+          <p class="catalog-filter-txt">Стоимость</p>
+          <div class="catalog-filter-slider"> <!--Слайдер задает критерии по цене-->
+            <div class="catalog-filter-slider-stroke lightgrey"></div>
+            <div class="catalog-filter-slider-stroke lightgreen"></div>
+            <div class="catalog-filter-slider-circle"></div>
+            <div class="catalog-filter-slider-circle"></div>
+            <p class="catalog-filter-slider-txt">от 0</p>
+            <p class="catalog-filter-slider-txt">до 5000</p>
+          </div>
+          <div class="catalog-filter-border"></div>
+          <p class="catalog-filter-txt">Цвет</p>
+          <input class="catalog-filter-color-choose" type="checkbox" name="Черный" checked>
+          <input class="catalog-filter-color-choose" type="checkbox" name="Белый">
+          <input class="catalog-filter-color-choose" type="checkbox" name="Синий" checked>
+          <input class="catalog-filter-color-choose" type="checkbox" name="Красный" checked>
+          <input class="catalog-filter-color-choose" type="checkbox" name="Розовый">
+          <div class="catalog-filter-border"></div>
+          <p class="catalog-filter-txt">Bluetooth</p>
+          <input class="catalog-filter-bluetooth-check" type="radio" name="Есть" checked>
+          <input class="catalog-filter-bluetooth-check" type="radio" name="Нет">
+          <button class="btn" type="submit">Показать</button>
+        </div>
+        <div class="catalog-sort">
+          <h3 class="catalog-filter-header">Сортировка:</h3>
+          <ul class="catalog-sort-menu">
+            <li class="bread-crumbs-item active"><a href="#">По цене</a></li>
+            <li class="bread-crumbs-item"><a href="#">По типу</a></li>
+            <li class="bread-crumbs-item"><a href="#">По популярности</a></li>
+          </ul>
+          <div class="catalog-sort-menu-arrow-up"></div>
+          <div class="catalog-sort-menu-arrow-down active"></div>
+          <div class="catalog-items">
+            <img class="catalog-item-img" src="http://placehold.it/150x100">
+            <div class="catalog-item-txt">
+              <p class="catalog-item-txt-name">Любительская селфи-палка</p>
+              <p class="catalog-item-txt-price">500 руб.</p>
+            </div>
+            <img class="catalog-item-img" src="http://placehold.it/150x100">
+            <div class="catalog-item-txt">
+              <p class="catalog-item-txt-name">Профессиональная селфи-палка </p>
+              <p class="catalog-item-txt-price">1 500 руб.</p>
+            </div>
+            <img class="catalog-item-img" src="http://placehold.it/150x100">
+            <div class="catalog-item-txt">
+              <p class="catalog-item-txt-name">Непотопляемая селфи-палка</p>
+              <p class="catalog-item-txt-price">2 500 руб.</p>
+            </div>
+            <img class="catalog-item-img" src="http://placehold.it/150x100">
+            <div class="catalog-item-txt">
+              <p class="catalog-item-txt-name">Селфи-палка «Следуй за мной»</p>
+              <p class="catalog-item-txt-price">4 900 руб.</p>
+            </div>
+            <div class="catalog-sort-paginat">
+              <ul class="catalog-sort-paginat-items">
+                <li class="catalog-sort-paginat-item"><a href="#">Назад</a></li>
+                <li class="catalog-sort-paginat-item active"><a href="#">1</a></li>
+                <li class="catalog-sort-paginat-item"><a href="#">2</a></li>
+                <li class="catalog-sort-paginat-item"><a href="#">3</a></li>
+                <li class="catalog-sort-paginat-item"><a href="#">Вперед</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer-logo">DEVICE</p>
+        <div class="footer-user-block">
+            <a class="user-block-log-out" href="#">Выйти</a>
+            <a class="user-block-compare" href="#">Сравнить</a>
+            <a class="user-block-basket" href="#">Корзина</a>
+        </div>
+        <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+        <div class="footer-nav">
+            <a class="footer-nav-link" href="#">Доставка</a>
+            <a class="footer-nav-link" href="#">Гарантия</a>
+            <a class="footer-nav-link" href="#">Контакты</a>
+        </div>
+        <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+        <div class="stroke yellow">
+        </div>
+        <section class="footer-social">
+          <a class="footer-social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="footer-social-btn social-btn-insta" href="#">Инстаграм</a>
+          <a class="footer-social-btn social-btn-twi" href="#">Твиттер</a>
+        </section> <!--Нужен ли здесь section?-->
+        <div class="footer-copyright">
+          <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" width="27px" height="34px"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
