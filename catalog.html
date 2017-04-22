@@ -7,20 +7,39 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="http://placehold.it/150x100" width="" height="" alt="Магазин Device">
-        <div class="user-block">
-          <div class="user-block-search">
-            <input type="text" name="search" value="Поиск по сайту">
-          </div>
-            <a class="user-block-person" href="#">Валентин Петухов</a>
-            <a class="user-block-log-out active" href="#">Выйти</a>
-            <a class="user-block-compare" href="#">Сравнить</a>
-            <a class="user-block-basket" href="#">Корзина</a>
-        </div>
+        <a href="#"> <!--Лого, с ссылкой на главную-->
+          <p class="header-logo">DEVICE</p>
+        </a>
+          <input class="user-block-search" type="text" name="search" value="Поиск по сайту">
+          <a class="user-block-person" href="#">Валентин Петухов</a>
+          <a class="user-block-log-out-active" href="#">Выйти</a>
+          <a class="user-block-compare" href="#">Сравнить</a>
+          <a class="user-block-basket" href="#">Корзина</a>
         <nav class="main-nav">
           <ul class="main-nav-items">
             <li class="main-nav-item">
-              <a class="main-nav-link" href="#">Каталог товаров</a> <!--Надо ли добавить "+" еще одним пунктом?-->
+              <a class="main-nav-link" href="#">Каталог товаров</a>
+              <input class="catalog-menu-active" type="checkbox" name="plus">
+              <ul class="sub-nav-items"> <!--Посмотрел стайлгайд, там выглядит одной ссылкой Каталог товаров +-->
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Экшн-камер</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Умные часы</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a class="sub-nav-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">Доставка</a>
@@ -32,110 +51,175 @@
               <a class="main-nav-link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="sub-nav-items"> <!--Выпад. меню при нажатии на "+"-->
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Экшн-камер</a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Умные часы</a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
-
-    <main class="container">
+    <main class="page-main">
       <h1 class="main-title">Моноподы для селфи</h1>
-      <ul class="bread-crumbs">
-        <li class="bread-crumbs-item"><a href="#">Главная</a></li>
-        <li class="bread-crumbs-item"><a href="#">Каталог товаров</a></li>
-        <li class="bread-crumbs-item"><a href="#">Моноподы для селфи</a></li>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a>Моноподы для селфи</a> <!--На вебинаре сказали ставить <a> без href-->
+        </li>
       </ul>
-      <div class="catalog-filter-sort"> <!--Контейнер содержит контейнер Фильтр и контейнер Сортировка -->
-        <div class="catalog-filter">
-          <h3 class="catalog-header">Фильтр:</h3>
-          <div class="catalog-filter-border"></div>
+      <div class="catalog-filter-sort"> <!--Контейнер содержит контейнер Фильтр и контейнер Сортировка-->
+        <form class="catalog-filter" action="#" method="get"> <!--Форма с параметрами фильтрации. Метод get, потому что на вебинаре говорили, что удобно можно поделиться ссылкой на отфильтрованные товары-->
+          <div class="catalog-header">Фильтр:</div> <!--Заменил <h3> на <div>-->
           <p class="catalog-filter-txt">Стоимость</p>
           <div class="catalog-filter-slider"> <!--Слайдер задает критерии по цене-->
-            <div class="catalog-filter-slider-stroke lightgrey"></div>
-            <div class="catalog-filter-slider-stroke lightgreen"></div>
-            <div class="catalog-filter-slider-circle"></div>
-            <div class="catalog-filter-slider-circle"></div>
-            <p class="catalog-filter-slider-txt">от 0</p>
-            <p class="catalog-filter-slider-txt">до 5000</p>
+            <div class="filter-slider-stroke lightgray"></div>
+            <div class="filter-slider-stroke lightgreen"></div>
+            <div class="filter-slider-circle"></div>
+            <div class="filter-slider-circle"></div>
+            <p class="filter-slider-txt">от 0</p>
+            <p class="filter-slider-txt">до 5000</p>
           </div>
-          <div class="catalog-filter-border"></div>
-          <p class="catalog-filter-txt">Цвет</p>
-          <input class="catalog-filter-color-choose" type="checkbox" name="Черный" checked>
-          <input class="catalog-filter-color-choose" type="checkbox" name="Белый">
-          <input class="catalog-filter-color-choose" type="checkbox" name="Синий" checked>
-          <input class="catalog-filter-color-choose" type="checkbox" name="Красный" checked>
-          <input class="catalog-filter-color-choose" type="checkbox" name="Розовый">
-          <div class="catalog-filter-border"></div>
-          <p class="catalog-filter-txt">Bluetooth</p>
-          <input class="catalog-filter-bluetooth-check" type="radio" name="Есть" checked>
-          <input class="catalog-filter-bluetooth-check" type="radio" name="Нет">
+          <p class="catalog-filter-txt">Цвет</p> <!--Ниже чекбоксы по цветам-->
+          <label for="checkbox-black">
+            <span>Черный</span>
+            <input class="filter-color-choose" id="checkbox-black" type="checkbox" name="black" checked>
+          </label>
+          <label for="checkbox-white">
+            <span>Белый</span>
+            <input class="filter-color-choose" id="checkbox-white" type="checkbox" name="white">
+          </label>
+          <label for="checkbox-blue">
+            <span>Синий</span>
+            <input class="filter-color-choose" id="checkbox-blue" type="checkbox" name="blue" checked>
+          </label>
+          <label for="checkbox-red">
+            <span>Красный</span>
+            <input class="filter-color-choose" id="checkbox-red" type="checkbox" name="red" checked>
+          </label>
+          <label for="checkbox-pink">
+            <span>Розовый</span>
+            <input class="filter-color-choose" id="checkbox-pink" type="checkbox" name="pink">
+          </label>
+          <p class="catalog-filter-txt">Bluetooth</p> <!--Ниже радиобаттоны по bluetooth-->
+          <label for="radio-yes">
+            <span>Есть</span>
+            <input class="filter-bluetooth-check" id="radio-yes" type="radio" name="bluetooth-check" value="yes" checked>
+          </label>
+          <label for="radio-no">
+            <span>Нет</span>
+            <input class="filter-bluetooth-check" id="radio-no" type="radio" name="bluetooth-check" value="no">
+          </label>
           <button class="btn" type="submit">Показать</button>
-        </div>
+        </form>
         <div class="catalog-sort">
-          <h3 class="catalog-filter-header">Сортировка:</h3>
-          <ul class="catalog-sort-menu">
-            <li class="bread-crumbs-item active"><a href="#">По цене</a></li>
-            <li class="bread-crumbs-item"><a href="#">По типу</a></li>
-            <li class="bread-crumbs-item"><a href="#">По популярности</a></li>
-          </ul>
-          <div class="catalog-sort-menu-arrow-up"></div>
-          <div class="catalog-sort-menu-arrow-down active"></div>
-          <div class="catalog-items">
-            <img class="catalog-item-img" src="http://placehold.it/150x100">
-            <div class="catalog-item-txt">
-              <p class="catalog-item-txt-name">Любительская селфи-палка</p>
-              <p class="catalog-item-txt-price">500 руб.</p>
-            </div>
-            <img class="catalog-item-img" src="http://placehold.it/150x100">
-            <div class="catalog-item-txt">
-              <p class="catalog-item-txt-name">Профессиональная селфи-палка </p>
-              <p class="catalog-item-txt-price">1 500 руб.</p>
-            </div>
-            <img class="catalog-item-img" src="http://placehold.it/150x100">
-            <div class="catalog-item-txt">
-              <p class="catalog-item-txt-name">Непотопляемая селфи-палка</p>
-              <p class="catalog-item-txt-price">2 500 руб.</p>
-            </div>
-            <img class="catalog-item-img" src="http://placehold.it/150x100">
-            <div class="catalog-item-txt">
-              <p class="catalog-item-txt-name">Селфи-палка «Следуй за мной»</p>
-              <p class="catalog-item-txt-price">4 900 руб.</p>
-            </div>
-            <div class="catalog-sort-paginat">
-              <ul class="catalog-sort-paginat-items">
-                <li class="catalog-sort-paginat-item"><a href="#">Назад</a></li>
-                <li class="catalog-sort-paginat-item active"><a href="#">1</a></li>
-                <li class="catalog-sort-paginat-item"><a href="#">2</a></li>
-                <li class="catalog-sort-paginat-item"><a href="#">3</a></li>
-                <li class="catalog-sort-paginat-item"><a href="#">Вперед</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <p class="catalog-header">Сортировка:</p> <!--Заменил <h3> на <div>-->
+        <ul class="catalog-sort-menu">
+          <li class="sort-menu-item-active">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort-menu-item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort-menu-item">
+            <a href="#">По популярности</a>
+          </li>
+        </ul>
+        <div class="sort-menu-arrow-up"></div>
+        <div class="sort-menu-arrow-down-active"></div>
       </div>
+      <div class="catalog-items"> <!--Контейнер содержит отсортированные товары-->
+            <article class="catalog-item"> <!--Карточка товара-->
+              <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Любительская селфи-палка"> <!--При наведении на картинку, она фейдится-->
+              <div class="item-txt">
+                <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                  <p class="item-name">Любительская селфи-палка</p>
+                </a>
+                <p class="item-price">500 руб.</p>
+              </div>
+              <div class="item-to-basket">
+              <button class="btn" type="submit">В корзину</button>
+              <a class="add-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
+                <p>New</p>
+                <div class="new-circle"></div>
+              </div>
+            </article>
+            <article class="catalog-item"> <!--Карточка товара-->
+              <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Профессиональная селфи-палка"> <!--При наведении на картинку, она фейдится-->
+              <div class="item-txt">
+                <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                  <p class="item-name">Профессиональная селфи-палка</p>
+                </a>
+                <p class="item-price">1 500 руб.</p>
+              </div>
+              <div class="item-to-basket">
+              <button class="btn" type="submit">В корзину</button>
+              <a class="add-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
+                <p>New</p>
+                <div class="new-circle"></div>
+              </div>
+            </article>
+            <article class="catalog-item"> <!--Карточка товара-->
+              <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Непотопляемая селфи-палка"> <!--При наведении на картинку, она фейдится-->
+              <div class="item-txt">
+                <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                  <p class="item-name">Непотопляемая селфи-палка</p>
+                </a>
+                <p class="item-price">2 500 руб.</p>
+              </div>
+              <div class="item-to-basket">
+              <button class="btn" type="submit">В корзину</button>
+              <a class="add-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
+                <p>New</p>
+                <div class="new-circle"></div>
+              </div>
+            </article>
+            <article class="catalog-item"> <!--Карточка товара-->
+              <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Селфи-палка «Следуй за мной»"> <!--При наведении на картинку, она фейдится-->
+              <div class="item-txt">
+                <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                  <p class="item-name">Селфи-палка «Следуй за мной»</p>
+                </a>
+                <p class="item-price">4 900 руб.</p>
+              </div>
+              <div class="item-to-basket">
+              <button class="btn" type="submit">В корзину</button>
+              <a class="add-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
+                <p>New</p>
+                <div class="new-circle"></div>
+              </div>
+            </article>
+          </div>
+      <ul class="catalog-pagination-items"> <!--Блок с пагинацией-->
+        <li class="catalog-pagination-item">
+          <a href="#">Назад</a>
+        </li>
+        <li class="catalog-sort-paginat-item-active">
+          <a href="#">1</a>
+        </li>
+        <li class="catalog-sort-paginat-item">
+          <a href="#">2</a>
+        </li>
+        <li class="catalog-sort-paginat-item">
+          <a href="#">3</a>
+        </li>
+        <li class="catalog-sort-paginat-item">
+          <a href="#">Вперед</a>
+        </li>
+      </ul>
     </main>
-
     <footer>
       <div class="container">
-        <p class="footer-logo">DEVICE</p>
+        <a href="#">
+          <p class="footer-logo">DEVICE</p>
+        </a>
         <div class="footer-user-block">
             <a class="user-block-log-out" href="#">Выйти</a>
             <a class="user-block-compare" href="#">Сравнить</a>
@@ -156,7 +240,9 @@
           <a class="footer-social-btn social-btn-twi" href="#">Твиттер</a>
         </section> <!--Нужен ли здесь section?-->
         <div class="footer-copyright">
-          <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" width="27px" height="34px"></a>
+          <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="http://placehold.it/150x100" width="27px" height="34px" alt="htmlacademy.ru">
+          </a>
         </div>
       </div>
     </footer>
