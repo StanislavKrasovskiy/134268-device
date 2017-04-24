@@ -64,8 +64,8 @@
       <!--Контейнер со слайдерами-->
       <div class="slider-position">
         <div class="slider-container">
+          <!--Порядковый индикатор слайдера-->
           <div class="slide-indicator">
-            <!--Порядковый индикатор слайдера-->
             <ul class="slider-choice">
               <li class="choice-item choice-item-active">
                 <a></a>
@@ -77,6 +77,15 @@
                 <a href="#"></a>
               </li>
             </ul>
+            <label for="slider-1">
+              <input class="choice-item" id="slider-1" type="radio" name="slider-choice" checked>
+            </label>
+            <label for="slider-2">
+              <input class="choice-item" id="slider-2" type="radio" name="slider-choice">
+            </label>
+            <label for="slider-3">
+              <input class="choice-item" id="slider-3" type="radio" name="slider-choice">
+            </label>
           </div>
           <!--Первый слайдер-->
           <div id="index-slider-1" class="index-slide">
@@ -124,21 +133,11 @@
                 в себе силы не пропускать занятия и соблюдать диету.
               </p>
               <a class="btn" href="#">Подробнее</a>
-              <!--Порядковый индикатор слайдера-->
-              <ul class="slider-choice">
-                <li class="slider-choice-item">
-                  <a href="#"></a>
-                </li>
-                <li class="slider-choice-item slider-choice-item-active">
-                  <a></a>
-                </li>
-                <li class="slider-choice-item">
-                  <a href="#"></a>
-                </li>
-              </ul>
               <table class="slider-table">
                 <tr>
                   <td>48 часов</td>
+                </tr>
+                <tr>
                   <th>Без подзарядки</th>
                 </tr>
               </table>
@@ -160,25 +159,13 @@
                 квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="btn" href="#">Подробнее</a>
-              <!--Порядковый индикатор слайдера-->
-              <ul class="slider-choice">
-                <li class="slider-choice-item">
-                  <a href="#"></a>
-                </li>
-                <li class="slider-choice-item">
-                  <a href="#"></a>
-                </li>
-                <li class="slider-choice-item slider-choice-item-active">
-                  <a></a>
-                </li>
-              </ul>
               <table class="slider-table">
                 <tr>
                   <td>800 м</td>
-                  <th>Дальность полета</th>
+                  <td>50 м</td>
                 </tr>
                 <tr>
-                  <td>50 м</td>
+                  <th>Дальность полета</th>
                   <th>Радиус поражения</th>
                 </tr>
               </table>
@@ -190,8 +177,8 @@
       <div class="popular-position">
         <div class="popular-container">
           <ul class="popular-items">
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Виртуальная реальность">
@@ -199,8 +186,8 @@
                 <p>Виртуальная реальность</p>
               </a>
             </li>
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Моноподы для селфи">
@@ -208,8 +195,8 @@
                 <p>Моноподы для селфи</p>
               </a>
             </li>
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Экшн-камеры">
@@ -217,8 +204,8 @@
                 <p>Экшн-камеры</p>
               </a>
             </li>
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Фитнес-браслеты">
@@ -226,8 +213,8 @@
                 <p>Фитнес-браслеты</p>
               </a>
             </li>
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Умные часы">
@@ -235,8 +222,8 @@
                 <p>Умные часы</p>
               </a>
             </li>
-            <li>
-              <a class="popular-item" href="#">
+            <li class="popular-item">
+              <a class="popular-link" href="#">
                 <div>
                   <img src="http://placehold.it/150x100" width="160" height="160"
                   alt="Квадрокоптеры">
@@ -261,7 +248,8 @@
               прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
-            <img class="services-img">
+            <img class="services-img" src="http://placehold.it/150x100"
+            width="136" height="164" alt="Доставка">
           </div>
           <div id="services-slider-2" class="services-slide">
             <h2 class="index-content-header">Гарантия</h2>
@@ -269,7 +257,8 @@
               товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.
             </p>
-            <img class="services-img">
+            <img class="services-img" src="http://placehold.it/150x100"
+            width="171" height="195" alt="Гарантия">
           </div>
           <div id="services-slider-3" class="services-slide">
             <h2 class="index-content-header">Кредит</h2>
@@ -277,7 +266,8 @@
               Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для нашего банка, разумеется.
             </p>
-            <img class="services-img">
+            <img class="services-img" src="http://placehold.it/150x100"
+            width="156" height="188" alt="Кредит">
           </div>
         </div>
       </div>
@@ -340,10 +330,7 @@
             <div class="find-us-map-popup">
               <img src="http://placehold.it/150x100" width="960px" height="559px"
               alt="Карта">
-              <a class="btn btn-close">
-                <img src="http://placehold.it/150x100"
-                width="54px" height="54px" alt="Закрыть">
-              </a>
+              <a class="btn btn-close"></a>
             </div>
             <a class="btn" href="#">Напишите нам</a>
             <!--Контейнер с формой обратной связи-->
@@ -372,8 +359,8 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="main-footer">
+    <footer class="main-footer">
+      <div class="footer-container">
         <!--Контейнер с лого, войти, сравнить, корзина-->
         <div class="footer-user-block">
           <p class="footer-logo">DEVICE</p>
