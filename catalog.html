@@ -135,7 +135,7 @@
                 <input class="bluetooth-check" id="bluetooth-no" type="radio"
                 name="bluetooth-check" value="no">
               </label>
-              <a href="#" class="btn">Показать</a> <!--Исправил <button> на <a>-->
+              <button class="btn" type="submit">Показать</button>
             </form>
           </div>
           <!--Контейнер содержит контейнеры с сортировкой,
@@ -161,7 +161,7 @@
             <!--Контейнер содержит отсортированные товары-->
             <div class="catalog-items">
               <!--Карточка товара-->
-              <article class="catalog-item">
+              <div class="catalog-item">
                 <!--Картинка товара-->
                 <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Любительская селфи-палка"> <!--При наведении на картинку, она фейдится-->
                 <!--Название товара (ссылка)-->
@@ -178,13 +178,13 @@
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
-              </article>
+              </div>
               <!--Карточка товара-->
-              <article class="catalog-item">
+              <div class="catalog-item">
                 <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Профессиональная селфи-палка"> <!--При наведении на картинку, она фейдится-->
                 <div class="item-txt">
-                  <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
-                    <p class="item-name">Профессиональная селфи-палка</p>
+                  <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                    Профессиональная селфи-палка
                   </a>
                   <p class="item-price">1 500 руб.</p>
                 </div>
@@ -195,13 +195,13 @@
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
-              </article>
+              </div>
               <!--Карточка товара-->
-              <article class="catalog-item">
+              <div class="catalog-item">
                 <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Непотопляемая селфи-палка"> <!--При наведении на картинку, она фейдится-->
                 <div class="item-txt">
-                  <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
-                    <p class="item-name">Непотопляемая селфи-палка</p>
+                  <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                    Непотопляемая селфи-палка
                   </a>
                   <p class="item-price">2 500 руб.</p>
                 </div>
@@ -212,13 +212,13 @@
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
-              </article>
+              </div>
               <!--Карточка товара-->
-              <article class="catalog-item">
+              <div class="catalog-item">
                 <img class="item-img" src="http://placehold.it/150x100" width="360" height="380" alt="Селфи-палка «Следуй за мной»"> <!--При наведении на картинку, она фейдится-->
                 <div class="item-txt">
-                  <a href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
-                    <p class="item-name">Селфи-палка «Следуй за мной»</p>
+                  <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
+                    Селфи-палка «Следуй за мной»
                   </a>
                   <p class="item-price">4 900 руб.</p>
                 </div>
@@ -229,7 +229,7 @@
                 <div class="new-sign new-sign-active"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
-              </article>
+              </div>
             </div>
             <!--Контейнер с пагинацией-->
             <ul class="pagination-items">
@@ -254,7 +254,7 @@
       </div>
     </main>
     <footer>
-      <div class="footer-container">
+      <div class="main-footer">
         <!--Контейнер с лого, войти, сравнить, корзина-->
         <div class="footer-user-block">
           <a href="/">
@@ -273,7 +273,7 @@
           <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <!--Контейнер с чертой, кнопками соцсетей, ссылкой на HTML academy-->
-        <div class="footer-social-copyright">
+        <div class="footer-social">
           <div class="stroke stroke-yellow"></div>
           <div class="footer-social-items">
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
