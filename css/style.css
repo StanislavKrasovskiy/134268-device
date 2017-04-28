@@ -1,85 +1,66 @@
 body {
-  font-size: 15px;
-  line-height: 30px;
+  font: 300 15px / 30px OpenSans, sans-serif;
   color: #464646;
-  font-weight: 300;
-  font-family: Open Sans, sans-serif;
 }
 
 /*Логотип*/
 .header-logo {
-  font-size: 48px; /*?Точно будем делать текстом?*/
-  line-height: 60px;
+  font: 800 48px / 1 Gilroy, sans-serif;
+  letter-spacing: 0.48px; /*Не забыть! В тексте О нас и Контактах, адресе и телефоне значение межбуквенного — 0*/
   color: #000000;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
   text-transform: capitalize;
 }
 
 /*Заголовок (слайдер)*/
 .index-content-header {
-  font-size: 47px;
-  line-height: 57px;
+  font: 800 47px / 56.4px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
   color: #000000;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
 }
 
 /*Порядковый номер (слайдер)*/
 .slider-number {
-  font-size: 180px;
-  line-height: 180px;
+  font: 800 179.2px / 1 Gilroy, sans-serif;
+  letter-spacing: 1.792px;
   color: #ffffff;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
 }
 
 /*Заголовок таблицы (слайдер)*/
-th {
-  font-size: 13px;
-  line-height: 20px;
+.slider-table th {
+  font: 300 13px / 20px Open Sans, sans-serif;
+  letter-spacing: 0.13px;
   color: #464646;
-  font-weight: 300;
-  font-family: Open Sans, sans-serif;
 }
 
 /*Текст в таблице (слайдер)*/
-td {
-  font-size: 36px;
-  line-height: 44px;
+.slider-table td {
+  font: 300 36px / 43.2px Gilroy, sans-serif;
+  letter-spacing: 0.36px;
   color: #000000;
-  font-weight: 300;
-  font-family: Gilroy, sans-serif;
 }
 
 /*Заголовок каталога*/
 .main-title {
-  font-size: 47px;
-  line-height: 57px;
+  font: 800 47px / 56.4px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
   color: #000000;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
 }
 
 /*Заголовок фильтра*/
 .filter-title {
-  font-size: 16px;
-  line-height: 1.2em;
+  font: 800 16px / 19.2px Gilroy, sans-serif;
+  letter-spacing: 3.2px;
   color: #000000;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
 }
 
 /*Заголовок сортировки*/
 .catalog-sort-title {
-  font-size: 16px;
-  line-height: 1.2em;
+  font: 800 16px / 19.2px Gilroy, sans-serif;
+  letter-spacing: 3.2px;
   color: #000000;
-  font-weight: 800;
-  font-family: Gilroy, sans-serif;
 }
 
-/*Лучше сделать так?
+/*?Лучше сделать так?
 .filter-title,
 .catalog-sort-title {
   font-size: 16px;
