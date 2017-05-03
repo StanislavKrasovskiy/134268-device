@@ -1,0 +1,43 @@
+.popular-position {
+  width: 100%;
+}
+
+.popular-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.popular-items {
+  display: inline-block;
+
+}
+
+.popular-item {
+  display: inline-block;
+  width: 160px;
+
+}
+
+.popular-link {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-link p {
+  font: 800 16px / 19.2px Gilroy, sans-serif;
+  letter-spacing: 3.2px;
+  color: #000000;
+}
+}
+
+.popular-link-square {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-link-square img {
+  margin: 0 auto;
+}

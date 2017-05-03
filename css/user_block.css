@@ -1,4 +1,4 @@
-/*Шапка - поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
+/*Поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
 .user-block {
   width: auto;
   margin: 0 auto;
@@ -7,20 +7,25 @@
   background-color: rgba(76, 175, 80, 0.3);
 }
 
-/*Шапка - поле поиска*/
+/*Поле поиска*/
 .user-block-search {
-
+  display: inline-block;
 }
 
-/*Шапка - поле поиска*/
+/*Ссылка войти/выйти*/
 .user-block-login {
-  float: right;
+  display: inline-block;
+  margin-left: 420px;
 }
 
+/*Ссылка сравнить*/
 .user-block-compare {
-  float: right;
+  display: inline-block;
+  margin-left: 238px;
 }
 
+/*Ссылка корзина*/
 .user-block-basket {
-  float: right;
+  display: inline-block;
+  margin-left: 65px;
 }

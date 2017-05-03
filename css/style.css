@@ -1,11 +1,21 @@
  @import "header.css";
  @import "user_block.css";
  @import "main_nav.css";
+ @import "page_main.css";
+ @import "sliders.css";
+ @import "popular.css";
 
 body {
   font: 300 15px / 30px OpenSans, sans-serif;
   color: #464646;
+  margin: 0;
+  padding: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 /*Заголовок (слайдер)*/
 .index-content-header {
@@ -54,24 +64,4 @@ body {
   font: 800 16px / 19.2px Gilroy, sans-serif;
   letter-spacing: 3.2px;
   color: #000000;
-}
-
-
-
-/*Основная часть*/
-/*Слайдер*/
-
-.slider-position {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.slider-container {
-  width: auto;
-  margin: 0 auto;
-}
-
-.slider-container {
-  width: auto;
-  margin: 0 auto;
 }

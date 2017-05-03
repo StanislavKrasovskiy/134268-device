@@ -1,11 +1,16 @@
 /*Шапка*/
+.main-header {
+  width: 100%;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
 .header-container {
   width: 1160px;
   min-height: 299px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 0px 60px 0px 60px;
-
   background-color: rgba(240, 197, 46, 0.5);
 }
 

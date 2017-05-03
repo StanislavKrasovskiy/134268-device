@@ -1,3 +1,4 @@
+/*Основное меню*/
 .main-nav {
   width: auto;
   margin: 0 auto;
@@ -7,17 +8,42 @@
 }
 
 .main-nav-items {
-
+  display: inline-block;
 }
 
 .main-nav-item {
   display: inline-block;
 }
 
+.main-nav-item:nth-of-type(2) {
+  display: inline-block;
+  margin-left: 294px;
+}
+
+.main-nav-item:nth-of-type(3) {
+  display: inline-block;
+  margin-left: 38px;
+}
+
+.main-nav-item:nth-of-type(4) {
+  display: inline-block;
+  margin-left: 113px;
+}
+
 .main-nav-link {
 
 }
 
+/*Выпадающее меню*/
 .sub-nav-items {
-  display: none;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.sub-nav-item {
+  display: inline;
+  text-align: left;
+}
+
+.sub-nav-link {
+
 }
