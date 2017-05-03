@@ -1,0 +1,20 @@
+/*Шапка*/
+.header-container {
+  width: 1160px;
+  min-height: 299px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0px 60px 0px 60px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+/*Шапка - Лого*/
+.header-logo {
+  display: inline;
+  margin-top: -18px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+  outline-style: dashed;
+  outline-color: rgba(76, 175, 80, 0.8);
+}

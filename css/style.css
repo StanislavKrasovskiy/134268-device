@@ -1,14 +1,10 @@
+ @import "header.css";
+ @import "user_block.css";
+ @import "main_nav.css";
+
 body {
   font: 300 15px / 30px OpenSans, sans-serif;
   color: #464646;
-}
-
-/*Логотип*/
-.header-logo {
-  font: 800 48px / 57.6px Gilroy, sans-serif;
-  letter-spacing: 0.48px; /*Не забыть! В тексте О нас и Контактах, адресе и телефоне значение межбуквенного — 0*/
-  color: #000000;
-  text-transform: capitalize;
 }
 
 /*Заголовок (слайдер)*/
@@ -58,4 +54,24 @@ body {
   font: 800 16px / 19.2px Gilroy, sans-serif;
   letter-spacing: 3.2px;
   color: #000000;
+}
+
+
+
+/*Основная часть*/
+/*Слайдер*/
+
+.slider-position {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: auto;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: auto;
+  margin: 0 auto;
 }

@@ -1,0 +1,23 @@
+.main-nav {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 45px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.main-nav-items {
+
+}
+
+.main-nav-item {
+  display: inline-block;
+}
+
+.main-nav-link {
+
+}
+
+.sub-nav-items {
+  display: none;
+}

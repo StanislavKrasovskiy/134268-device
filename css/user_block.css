@@ -1,0 +1,26 @@
+/*Шапка - поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
+.user-block {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 35px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+/*Шапка - поле поиска*/
+.user-block-search {
+
+}
+
+/*Шапка - поле поиска*/
+.user-block-login {
+  float: right;
+}
+
+.user-block-compare {
+  float: right;
+}
+
+.user-block-basket {
+  float: right;
+}
