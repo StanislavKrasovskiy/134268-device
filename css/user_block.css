@@ -1,31 +1,43 @@
 /*Поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
 .user-block {
-  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-bottom: 45px;
+  width: auto;
+
 
   background-color: rgba(76, 175, 80, 0.3);
 }
 
+/*Оформление ссылок*/
+.user-block a {
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: #464646;
+  text-decoration: none;
+}
+
+.user-block .btn-search {
+  display: none;
+}
+
 /*Поле поиска*/
 .user-block-search {
-  display: inline-block;
+  margin-right: 400px;
 }
 
 /*Ссылка войти/выйти*/
 .user-block-login {
-  display: inline-block;
-  margin-left: 420px;
+  margin-right: 240px;
 }
 
 /*Ссылка сравнить*/
 .user-block-compare {
-  display: inline-block;
-  margin-left: 238px;
+  margin-right: 78px;
 }
 
 /*Ссылка корзина*/
 .user-block-basket {
-  display: inline-block;
-  margin-left: 65px;
+
 }

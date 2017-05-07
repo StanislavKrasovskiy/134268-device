@@ -1,0 +1,28 @@
+.index-logos-position {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.index-logos-container {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.index-logos-item {
+  float: left;
+  margin-right: 40px;
+  font-size: 0;
+}
+
+.index-logos-item:last-of-type {
+  margin-right: 0px;
+}
+
+.index-logos-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}

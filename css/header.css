@@ -1,25 +1,25 @@
-/*Шапка*/
+/*Шапка — Обертка*/
 .main-header {
   width: 100%;
 
   background-color: rgba(76, 175, 80, 0.3);
 }
 
+/*Шапка - Центровщик*/
 .header-container {
-  width: 1160px;
-  min-height: 299px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 0px 60px 0px 60px;
+  width: 1160px;
+  min-height: 299px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 /*Шапка - Лого*/
 .header-logo {
-  display: inline;
-  margin-top: -18px;
+  display: block;
+  margin-bottom: 45px;
 
   background-color: rgba(76, 175, 80, 0.3);
-  outline-style: dashed;
-  outline-color: rgba(76, 175, 80, 0.8);
+  outline: 2px dashed rgba(76, 175, 80, 0.8);
 }

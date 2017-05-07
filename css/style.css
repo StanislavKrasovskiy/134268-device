@@ -1,9 +1,13 @@
  @import "header.css";
  @import "user_block.css";
- @import "main_nav.css";
+ @import "main_nav2.css";
  @import "page_main.css";
  @import "sliders.css";
  @import "popular.css";
+ @import "services.css";
+ @import "logos.css";
+ @import "about_contacts.css";
+ @import "footer2.css";
 
 body {
   font: 300 15px / 30px OpenSans, sans-serif;
@@ -17,33 +21,7 @@ body {
 }
 
 
-/*Заголовок (слайдер)*/
-.index-content-header {
-  font: 800 47px / 56.4px Gilroy, sans-serif;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
 
-/*Порядковый номер (слайдер)*/
-.slider-number {
-  font: 800 179.2px / 215.04px Gilroy, sans-serif;
-  letter-spacing: 1.792px;
-  color: #ffffff;
-}
-
-/*Заголовок таблицы (слайдер)*/
-.slider-table th {
-  font: 300 13px / 20px Open Sans, sans-serif;
-  letter-spacing: 0.13px;
-  color: #464646;
-}
-
-/*Текст в таблице (слайдер)*/
-.slider-table td {
-  font: 300 36px / 43.2px Gilroy, sans-serif;
-  letter-spacing: 0.36px;
-  color: #000000;
-}
 
 /*Заголовок каталога*/
 .main-title {

@@ -9,30 +9,102 @@
   width: 1160px;
   margin: 0 auto;
 
+
 }
 
 .slide-indicator {
-  display: inline-block;
+  position: absolute;
+  margin-top: 330px;
+  margin-left: 1000px;
+
 }
 
 .index-slide {
+  width: auto;
   display: inline-block;
+  margin-bottom: 120px;
+  padding: 0 60px;
+  font-size: 0;
 
 }
 
 .slider-img {
   display: inline-block;
   vertical-align: top;
-  width: 500px;
-  margin: 20px;
+  margin-right: 20px;
+  width: 480px;
 
   background-color: rgba(76, 175, 80, 0.3)
 }
 
+.slider-img img {
+  margin-left: 40px;
+}
+
 .slider-content {
   display: inline-block;
-  width: 540px;
-  margin: 20px;
+  margin-left: 20px;
+  width: 520px;
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: #464646;
 
   background-color: rgba(76, 175, 80, 0.3)
+}
+
+.slider-content a {
+  font: 800 18px / 21.6px Gilroy, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.btn-wrap {
+  margin-bottom: 60px;
+}
+
+.slider-content-txt {
+  margin-bottom: 60px;
+}
+
+.slider-number {
+  float: right;
+}
+
+#index-slider-2 {
+  display: none;
+}
+
+#index-slider-3 {
+  display: none;
+}
+
+/*Заголовок (слайдер)*/
+.index-content-header {
+  margin-bottom: 40px;
+  font: 800 47px / 56.4px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+/*Порядковый номер (слайдер)*/
+.slider-number {
+  font: 800 179.2px / 215.04px Gilroy, sans-serif;
+  letter-spacing: 1.792px;
+  color: #ffffff;
+}
+
+/*Заголовок таблицы (слайдер)*/
+.slider-table th {
+  font: 300 13px / 20px Open Sans, sans-serif;
+  letter-spacing: 0.13px;
+  color: #464646;
+}
+
+/*Текст в таблице (слайдер)*/
+.slider-table td {
+  font: 300 36px / 43.2px Gilroy, sans-serif;
+  letter-spacing: 0.36px;
+  color: #000000;
 }

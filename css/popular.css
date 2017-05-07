@@ -5,31 +5,34 @@
 .popular-container {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 90px;
+  font-size: 0;
 }
 
 .popular-items {
-  display: inline-block;
+  padding: 0;
 
+  background-color: rgba(76, 175, 80, 0.3)
 }
 
 .popular-item {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
   width: 160px;
+  font-size: 0;
+}
 
+.popular-item:last-child {
+  margin-right: 0px;
 }
 
 .popular-link {
-  display: inline-block;
-  width: 160px;
-  height: 160px;
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.popular-link p {
-  font: 800 16px / 19.2px Gilroy, sans-serif;
-  letter-spacing: 3.2px;
+  text-decoration: none;
+  text-align: left;
+  font: 800 18px / 21.6px Gilroy, sans-serif;
+  letter-spacing: 0.18px;
   color: #000000;
-}
 }
 
 .popular-link-square {
@@ -39,5 +42,5 @@
 }
 
 .popular-link-square img {
-  margin: 0 auto;
+  margin: 40px 40px;
 }

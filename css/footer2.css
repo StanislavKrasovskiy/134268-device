@@ -1,0 +1,128 @@
+.main-footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(70, 70, 70, 1);
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 1160px;
+  min-height: 323px;
+  background-color: rgba(70, 70, 70, 1);
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.footer-user-block {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 1160px;
+  font-size: 0px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.footer-logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 720px;
+}
+
+.footer-user-block .user-block-login {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.footer-user-block .user-block-compare {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.footer-user-block .user-block-basket {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-user-block a {
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.footer-nav-contacts {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: auto;
+  font-size: 0;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+
+.footer-address {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 160px;
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.footer-nav-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+  font: 800 18px / 21.6px Gilroy, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+}
+
+.footer-nav-link:nth-of-type(3) {
+  margin-right: 180px;
+}
+
+.footer-phone {
+  display: inline-block;
+  vertical-align: top;
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.footer-social {
+  margin: 0 auto;
+  width: auto;
+  font-size: 0;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.stroke {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 160px;
+}
+
+.footer-social-items {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 365px;
+  margin-left: 290px;
+
+  background-color: rgba(76, 175, 80, 0.3);
+}
+
+.footer-social-items a {
+  margin-right: 40px;
+  /*временно добавил описание для текста. В финале будут кнопки*/
+  font: 300 15px / 30px OpenSans, sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-copyright {
+  display: inline-block;
+  vertical-align: top;
+}

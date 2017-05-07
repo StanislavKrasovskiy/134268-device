@@ -9,23 +9,14 @@
 .main-nav-items {
   padding-left: 0px;
   list-style-type: none;
-}
-
-.main-nav-items::after {
-  content: "";
-  display: table;
-  clear: both;
+  font-size: 0;
 }
 
 .main-nav-item {
-  float: left;
-  margin-right: 320px;
-}
-
-.main-nav-item::after {
-  content: "";
-  display: table;
-  clear: both;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  margin-right: 0px;
 }
 
 .main-nav-item:nth-of-type(2) {
@@ -33,42 +24,48 @@
 }
 
 .main-nav-item:nth-of-type(3) {
-  margin-right: 100px;
+  margin-right: 120px;
 }
 
 .main-nav-item:nth-of-type(4) {
-  margin-right: 0;
+  margin-right: 0px;
 }
+
 
 .main-nav-link {
   font: 800 18px / 21.6px Gilroy, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 3.6px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
 /*Выпадающее меню*/
 .sub-nav-items {
+  display: inline-block;
+  vertical-align: top;
   padding-left: 0px;
   list-style-type: none;
+  font-size: 0;
 
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .sub-nav-item {
-  float: left;
+
 }
 
 #sub-nav-items-col-1 {
-  width: 190px;
+  margin-right: 40px;
 }
 
 #sub-nav-items-col-2 {
-  width: 130px;
+  margin-right: 40px;
 }
 
 #sub-nav-items-col-3 {
-  width: 130px;
+
 }
 
 .sub-nav-link {
