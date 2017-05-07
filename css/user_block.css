@@ -1,7 +1,5 @@
 /*Поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
 .user-block {
-  display: inline-block;
-  vertical-align: top;
   font-size: 0;
   margin: 0 auto;
   margin-bottom: 45px;
@@ -24,20 +22,27 @@
 
 /*Поле поиска*/
 .user-block-search {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 400px;
 }
 
 /*Ссылка войти/выйти*/
 .user-block-login {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 240px;
 }
 
 /*Ссылка сравнить*/
 .user-block-compare {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 78px;
 }
 
 /*Ссылка корзина*/
 .user-block-basket {
-
+  display: inline-block;
+  vertical-align: top;
 }
