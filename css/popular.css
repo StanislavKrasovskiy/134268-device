@@ -32,7 +32,7 @@
   text-align: left;
   font: 800 18px / 21.6px Gilroy, sans-serif;
   letter-spacing: 0.18px;
-  color: #000000;
+  color: rgba(0, 0, 0, 1)
 }
 
 .popular-link-square {

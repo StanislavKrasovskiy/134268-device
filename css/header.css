@@ -2,7 +2,7 @@
 .main-header {
   width: 100%;
 
-  background-color: rgba(76, 175, 80, 0.3);
+  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
 }
 
 /*Шапка - Центровщик*/

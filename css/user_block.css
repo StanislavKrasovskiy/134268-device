@@ -34,6 +34,14 @@
   margin-right: 240px;
 }
 
+.user-block-person {
+  margin-right: 20px;
+}
+
+.user-block-logout {
+  margin-right: 84px;
+}
+
 /*Ссылка сравнить*/
 .user-block-compare {
   display: inline-block;

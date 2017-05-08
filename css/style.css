@@ -9,6 +9,7 @@
  @import "about_contacts.css";
  @import "footer2.css";
  @import "write_us.css";
+ @import "catalog_main.css";
 
 body {
   font: 300 15px / 30px OpenSans, sans-serif;
@@ -19,28 +20,4 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-
-
-
-/*Заголовок каталога*/
-.main-title {
-  font: 800 47px / 56.4px Gilroy, sans-serif;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
-
-/*Заголовок фильтра*/
-.filter-title {
-  font: 800 16px / 19.2px Gilroy, sans-serif;
-  letter-spacing: 3.2px;
-  color: #000000;
-}
-
-/*Заголовок сортировки*/
-.catalog-sort-title {
-  font: 800 16px / 19.2px Gilroy, sans-serif;
-  letter-spacing: 3.2px;
-  color: #000000;
 }
