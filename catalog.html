@@ -8,11 +8,8 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <!--Лого, с ссылкой на главную-->
-        <a href="/">
-          <img class="header-logo" src="img/logo-device.svg"
-          width="162" height="35" alt="Возможно лучший магазин для гиков)">
-        </a>
+        <img class="header-logo" src="img/logo-device.svg"
+        width="162" height="35" alt="Возможно лучший магазин для гиков)">
         <!--Контейнер с полем поиска, ссылками:
         на профиль, выйти, сравнить, корзина-->
         <div class="user-block">
@@ -28,30 +25,38 @@
         <nav class="main-nav">
           <ul class="main-nav-items">
             <li class="main-nav-item">
-              <a class="main-nav-link" href="#">Каталог товаров</a>
-              <input class="catalog-menu catalog-menu-active" type="checkbox"
-              name="plus">
+              <div class="main-nav-link-main">
+                <a class="main-nav-link" href="#">Каталог товаров</a>
+                <input class="catalog-menu catalog-menu-active" type="checkbox"
+                name="plus">
+              </div>
               <!--Выпадающее меню-->
-              <ul class="sub-nav-items">
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Экшн-камер</a>
-                </li>
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Умные часы</a>
-                </li>
-                <li class="sub-nav-item">
-                  <a class="sub-nav-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+              <div class="main-nav-link-sub">
+                <ul id="sub-nav-items-col-1" class="sub-nav-items">
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul id="sub-nav-items-col-2" class="sub-nav-items">
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul id="sub-nav-items-col-3" class="sub-nav-items">
+                  <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link" href="#">Доставка</a>
@@ -66,6 +71,7 @@
         </nav>
       </div>
     </header>
+    
     <main class="page-main">
       <!--Контейнер с заголовком, хлебными крошками, формой фильтрации,
       инструментами сортировки, отсортированными товарами, пагинацией-->
