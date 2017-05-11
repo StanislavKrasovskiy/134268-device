@@ -1,18 +1,53 @@
- @import "header.css";
- @import "user_block.css";
- @import "main_nav2.css";
- @import "page_main.css";
- @import "sliders.css";
- @import "popular.css";
- @import "services.css";
- @import "logos.css";
- @import "about_contacts.css";
- @import "footer2.css";
- @import "write_us.css";
- @import "catalog_main.css";
+@import "header.css";
+@import "user_block.css";
+@import "main_nav2.css";
+@import "page_main.css";
+@import "sliders.css";
+@import "popular.css";
+@import "services.css";
+@import "logos.css";
+@import "about_contacts.css";
+@import "footer2.css";
+@import "write_us.css";
+@import "catalog_main.css";
+@import "btn.css";
+@import "stroke.css";
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 body {
-  font: 300 15px / 30px OpenSans, sans-serif;
+  min-width: 1200px;
+  font: 300 15px / 30px 'Open Sans', sans-serif;
   color: #464646;
   margin: 0;
   padding: 0;
@@ -20,4 +55,61 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.icon-search,
+.icon-user,
+.icon-compare,
+.icon-cart,
+.main-menu-catalog-plus,
+.slider-choose-indicator,
+.tick-checkbox, .icon-user-footer,
+.icon-compare-footer,
+.icon-cart-footer,
+.icon-facebook,
+.icon-insta,
+.icon-twitter{
+	background: url('../img/sprites.png') no-repeat;
+}
+
+.icon-search{
+	background-position: -16px -16px ;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-user{
+	background-position: -68px -20px ;
+	width: 13px;
+	height: 12px;
+}
+
+.icon-compare{
+	background-position: -120px -21px ;
+	width: 10px;
+	height: 10px;
+}
+
+.icon-cart{
+	background-position: -167px -19px ;
+	width: 12px;
+	height: 12px;
+}
+
+.main-menu-catalog-plus{
+	background-position: -215px -17px ;
+	width: 16px;
+	height: 16px;
+}
+
+.slider-choose-indicator{
+	background-position: -270px -22px ;
+	width: 10px;
+	height: 10px;
+}
+
+.tick-checkbox{
+	background-position: -315px -21px ;
+	width: 12px;
+	height: 7px;
 }

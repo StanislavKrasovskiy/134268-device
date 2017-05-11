@@ -1,0 +1,23 @@
+.stroke {
+  display: block;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 7px;
+}
+
+.stroke-white {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-black {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.stroke-yellow {
+  float: left;
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0;
+  background-color: rgba(255, 186, 0, 1);
+}

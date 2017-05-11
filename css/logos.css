@@ -7,14 +7,18 @@
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 90px;
-
-  background-color: rgba(76, 175, 80, 0.3);
 }
 
 .index-logos-item {
   float: left;
   margin-right: 40px;
-  font-size: 0;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.index-logos-item:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 .index-logos-item:last-of-type {

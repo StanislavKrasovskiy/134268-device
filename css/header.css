@@ -1,25 +1,32 @@
 /*Шапка — Обертка*/
 .main-header {
+  position: relative;
+  z-index: 1;
   width: 100%;
-
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
 }
 
 /*Шапка - Центровщик*/
 .header-container {
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 0px 60px 0px 60px;
+  margin-top: 40px;
+  padding: 0px 60px;
   width: 1160px;
-  min-height: 299px;
-  background-color: rgba(240, 197, 46, 0.5);
+  min-height: 186px;
+  background-color: rgba(247, 226, 150, 1);
 }
 
 /*Шапка - Лого*/
 .header-logo {
-  display: block;
-  margin-bottom: 45px;
+  position: relative;
+  bottom: 18px;
+  width: 163px;
+  height: 35px;
+}
 
-  background-color: rgba(76, 175, 80, 0.3);
-  outline: 2px dashed rgba(76, 175, 80, 0.8);
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
 }

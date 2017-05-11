@@ -1,11 +1,9 @@
-/*Основное меню*/
 .main-nav {
   width: auto;
   margin: 0 auto;
-
-  background-color: rgba(76, 175, 80, 0.3);
 }
 
+/*Список с Главным меню*/
 .main-nav-items {
   padding-left: 0px;
   list-style-type: none;
@@ -13,63 +11,79 @@
 }
 
 .main-nav-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   font-size: 0;
-  margin-right: 0px;
+  margin-right: 300px;
 }
 
 .main-nav-item:nth-of-type(2) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .main-nav-item:nth-of-type(3) {
-  margin-right: 120px;
+  margin-right: 104px;
 }
 
 .main-nav-item:nth-of-type(4) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
-
+/*Главное меню. Ссылки*/
 .main-nav-link {
-  font: 800 18px / 21.6px Gilroy, sans-serif;
+  display: inline-block;
+  margin-bottom: 40px;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3.6px;
   color: rgba(0, 0, 0, 1);
 }
 
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
 /*Выпадающее меню*/
+.main-nav-link-sub {
+  position: absolute;
+  margin-left: -60px;
+  padding-left: 60px;
+  padding-bottom: 2px;
+  display: none;
+  width: 1160px;
+  background-color: rgba(247, 226, 150, 1);
+}
+
+.main-nav-item:hover .main-nav-link-sub {
+  display: block;
+}
+
 .sub-nav-items {
   display: inline-block;
   vertical-align: top;
   padding-left: 0px;
+  margin-right: 60px;
   list-style-type: none;
   font-size: 0;
-
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.sub-nav-item {
-
-}
-
-#sub-nav-items-col-1 {
-  margin-right: 40px;
-}
-
-#sub-nav-items-col-2 {
-  margin-right: 40px;
-}
-
-#sub-nav-items-col-3 {
-
 }
 
 .sub-nav-link {
-  font: 300 15px / 36px OpenSans, sans-serif;
+  font: 300 15px / 36px 'Open Sans', sans-serif;
   letter-spacing: 0.15px;
   color: #000000;
   text-decoration: none;
+}
+
+.sub-nav-link:hover {
+  opacity: 0.6;
+}
+
+.sub-nav-link:active {
+  opacity: 0.3;
 }

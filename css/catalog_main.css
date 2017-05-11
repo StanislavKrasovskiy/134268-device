@@ -34,14 +34,24 @@
 .breadcrumbs-item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .breadcrumbs-item a {
-  font: 300 14px / 36px OpenSans, sans-serif;
+  position: relative;
+  font: 300 14px / 36px 'Open Sans', sans-serif;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+}
+
+.breadcrumbs-item a::after {
+  position: absolute;
+  right: -20px;
+  display: inline-block;
+  content: "〉";
+  font: 400 14px / 36px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 1);
 }
 
 .breadcrumbs-item p {
@@ -69,10 +79,6 @@
   margin-right: 60px;
   width: 143px;
   background-color: rgba(239, 239, 239, 1);
-}
-
-.form-filter {
-
 }
 
 .form-filter span{
@@ -144,7 +150,7 @@
   margin: 0;
   padding-left: 0px;
   list-style-type: none;
-  font: 0;
+  font-size: 0;
 }
 
 .sort-menu-item {

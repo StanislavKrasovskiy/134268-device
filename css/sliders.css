@@ -4,24 +4,37 @@
 }
 
 .slider-container {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
 }
 
-.slide-indicator {
+/*Фон в шапке слайдера*/
+.slide-hat {
   position: absolute;
-  margin-top: 330px;
-  margin-left: 1000px;
+  min-width: 1160px;
+  min-height: 113px;
+  background-color: rgba(247, 226, 150, 1);
 
 }
 
+.slide-indicator {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+}
+
 .index-slide {
+  position: relative;
+  display: none;
   width: auto;
-  display: inline-block;
   margin-bottom: 120px;
   padding: 0 60px;
   font-size: 0;
+}
 
+.index-slide-active {
+  display: block;
 }
 
 .slider-img {
@@ -29,8 +42,6 @@
   vertical-align: top;
   margin-right: 20px;
   width: 480px;
-
-  background-color: rgba(76, 175, 80, 0.3)
 }
 
 .slider-img img {
@@ -40,15 +51,14 @@
 .slider-content {
   display: inline-block;
   margin-left: 20px;
+  padding-left: 20px;
   width: 520px;
-  font: 300 15px / 30px OpenSans, sans-serif;
+  font: 300 15px / 30px 'Open Sans', sans-serif;
   color: #464646;
-
-  background-color: rgba(76, 175, 80, 0.3)
 }
 
 .slider-content a {
-  font: 800 18px / 21.6px Gilroy, sans-serif;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: #000000;
@@ -60,39 +70,41 @@
   margin-bottom: 60px;
 }
 
+/*Описание в слайдере*/
 .slider-content-txt {
   margin-bottom: 60px;
 }
 
-.slider-number {
-  float: right;
-}
-
-#index-slider-2 {
-  display: none;
-}
-
-#index-slider-3 {
-  display: none;
-}
-
-/*Заголовок (слайдер)*/
+/*Заголовки на главной*/
 .index-content-header {
+  position: relative;
+  margin: 0;
   margin-bottom: 40px;
-  font: 800 47px / 56.4px Gilroy, sans-serif;
+  font: 800 47px / 56.4px 'Gilroy', sans-serif;
   letter-spacing: 0.47px;
   color: #000000;
 }
 
 /*Порядковый номер (слайдер)*/
 .slider-number {
-  font: 800 179.2px / 215.04px Gilroy, sans-serif;
+  position: absolute;
+  top: -40px;
+  right: 62px;
+  font: 800 179.2px / 215.04px 'Gilroy', sans-serif;
   letter-spacing: 1.792px;
   color: #ffffff;
 }
 
+/*Слайдер. Таблица*/
+.slider-table {
+  width: auto;
+}
+
 /*Заголовок таблицы (слайдер)*/
 .slider-table th {
+  padding: 10px;
+  padding-left: 0;
+  text-align: left;
   font: 300 13px / 20px Open Sans, sans-serif;
   letter-spacing: 0.13px;
   color: #464646;
@@ -100,7 +112,10 @@
 
 /*Текст в таблице (слайдер)*/
 .slider-table td {
-  font: 300 36px / 43.2px Gilroy, sans-serif;
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 72px;
+  font: 300 36px / 43.2px 'Gilroy', sans-serif;
   letter-spacing: 0.36px;
   color: #000000;
 }

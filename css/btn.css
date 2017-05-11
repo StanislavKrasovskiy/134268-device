@@ -1,0 +1,58 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.btn-stroke {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: block;
+  width: 220px;
+  height: 8px;
+  background-color: rgba(240, 197, 46, 1);
+  transition: height .2s;
+}
+
+.btn:hover .btn-stroke {
+  height: 100%;
+}
+
+.btn:active {
+  opacity: 0.3;
+}
+
+.services-item {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 40px;
+}
+
+.services-item:hover .btn-stroke-services{
+  height: 100%;
+}
+
+.btn-services-active {
+  display: block;
+  width: 278px;
+  height: 40px;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: rgba(247, 225, 132, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.btn-stroke-services {
+  width: 160px;
+}

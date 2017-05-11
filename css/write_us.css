@@ -1,5 +1,5 @@
 .form-write-us-card {
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -28,7 +28,7 @@
   vertical-align: top;
   margin-right: 40px;
   margin-bottom: 35px;
-  font: 800 18px / 18px Gilroy, sans-serif;
+  font: 800 18px / 18px 'Gilroy', sans-serif;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -43,7 +43,7 @@
   height: 50px;
   background-color: rgba(229, 229, 229, 0.5);
   border: 0;
-  box-shadow: 0;
+  box-shadow: none;
   font: 300 15px / 30px OpenSans, sans-serif;
   color: rgba(70, 70, 70, 0.4);
 }
@@ -62,12 +62,12 @@
 }
 
 .form-write-us p {
-  font: 800 18px / 18px Gilroy, sans-serif;
+  font: 800 18px / 18px 'Gilroy', sans-serif;
   color: rgba(0, 0, 0, 1);
 }
 
 .form-write-us button {
-  font: 800 18px / 21.6px Gilroy, sans-serif;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3.6px;

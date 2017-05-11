@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-container">
         <img class="header-logo" src="img/logo-device.svg"
-        width="162" height="35" alt="Возможно лучший магазин для гиков)">
+        width="163" height="35" alt="Возможно лучший магазин для гиков)">
         <!--Контейнер с полем поиска, ссылками:
         на профиль, выйти, сравнить, корзина-->
         <div class="user-block">
           <input class="user-block-search" type="text" name="search"
           value="Поиск по сайту">
-          <a class="btn-search" href="#">Найти</a> <!--?Кнопка Найти уникальная?-->
+          <a class="btn-search" href="#">Найти</a>
           <a class="user-block-login" href="#">Войти</a>
           <a class="user-block-compare" href="#">Сравнить</a>
           <a class="user-block-basket" href="#">Корзина</a>
@@ -76,17 +77,6 @@
         <div class="slider-container">
           <!--Порядковый индикатор слайдера-->
           <div class="slide-indicator">
-            <!--<ul class="slider-choice">
-              <li class="choice-item choice-item-active">
-                <a></a>
-              </li>
-              <li class="choice-item">
-                <a href="#"></a>
-              </li>
-              <li class="choice-item">
-                <a href="#"></a>
-              </li>
-            </ul>-->
             <label for="slider-1">
               <input class="choice-item" id="slider-1" type="radio" name="slider-choice" checked>
             </label>
@@ -97,8 +87,11 @@
               <input class="choice-item" id="slider-3" type="radio" name="slider-choice">
             </label>
           </div>
+          <!--Шапка слайдера-->
+          <div class="slide-hat">
+          </div>
           <!--Первый слайдер-->
-          <div id="index-slider-1" class="index-slide">
+          <div id="index-slider-1" class="index-slide index-slide-active">
             <div class="slider-img">
               <img src="img/index-slider-item-1.png" width="384" height="486"
               alt="Самая длинная палка для селфи">
@@ -107,17 +100,17 @@
               <!--Контейнер—черта-->
               <div class="stroke stroke-white"></div>
               <span class="slider-number">01</span>
-              <h2 class="index-content-header">Делай селфи, как Бен Стиллер!</h2>
+              <h2 class="index-content-header">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</h2>
               <p class="slider-content-txt">Самая длинная палка для селфи
                 доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров длиной и весом всего 5 килограмм
               </p>
               <!--Ссылка Подробнее с оформлением-->
-              <div class="btn-wrap">
-                <a class="btn" href="#">Подробнее</a>
+              <a class="btn" href="#">
                 <div class="btn-stroke">
                 </div>
-              </div>
+                Подробнее
+              </a>
               <table class="slider-table">
                 <tr>
                   <td>8,5 м</td>
@@ -217,7 +210,7 @@
                   <img src="img/index-popular-item-2.png" width="86" height="117"
                   alt="Моноподы для селфи">
                 </div>
-                <p>Моноподы для селфи</p>
+                <p>Моноподы для&nbsp;селфи</p>
               </a>
             </li>
             <li class="popular-item">
@@ -261,11 +254,23 @@
       </div>
       <!--Доставка Гарантия Кредит-->
       <div class="services-position"> <!--?Для этого контейнера будем прописывать серый фон?-->
+        <div class="services-back">
+        </div>
         <div class="services-container">
           <ul class="services-items">
-            <li class="services-item services-item-active"><a>Доставка</a></li>
-            <li class="services-item"><a href="#">Гарантия</a></li>
-            <li class="services-item"><a href="#">Кредит</a></li>
+            <li class="services-item services-item-active">
+              <a class="btn btn-services-active">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a class="btn" href="#">Гарантия</a>
+              <div class="btn-stroke btn-stroke-services">
+              </div>
+            </li>
+            <li class="services-item">
+              <a class="btn" href="#">Кредит</a>
+              <div class="btn-stroke btn-stroke-services">
+              </div>
+            </li>
           </ul>
           <div id="services-slider-1" class="services-slide">
             <div class="services-slide-content">
@@ -359,7 +364,7 @@
               заехав в наш офис. Заодно, вы сможете проверить работоспособность
               покупки. Всякое бывает.
             </p>
-            <a class="find-us-map">
+            <a class="find-us-map" href="https://goo.gl/maps/6CVmLzAUhjA2">
               <img src="img/index-map-1.jpg" width="560" height="222"
               alt="Карта">
             </a>
@@ -400,27 +405,29 @@
       <div class="footer-container">
         <!--Контейнер с лого, войти, сравнить, корзина-->
         <div class="footer-user-block">
-          <img class="footer-logo" src="img/logo-device.svg"
+          <img class="footer-logo" src="img/logo-device-footer.svg"
           width="162" height="35" alt="Возможно лучший магазин для гиков)">
-          <a class="user-block-login" href="#">Войти</a>
-          <a class="user-block-compare" href="#">Сравнить</a>
-          <a class="user-block-basket" href="#">Корзина</a>
+          <a class="user-block-login footer-user-block-login" href="#">Войти</a>
+          <a class="user-block-compare footer-user-block-compare" href="#">Сравнить</a>
+          <a class="user-block-basket footer-user-block-basket" href="#">Корзина</a>
         </div>
         <!--Контейнер с телефоном, пунктами меню-->
         <div class="footer-nav-contacts">
-          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
-          <a class="footer-nav-link" href="#">Доставка</a>
-          <a class="footer-nav-link" href="#">Гарантия</a>
-          <a class="footer-nav-link" href="#">Контакты</a>
-          <span class="footer-phone">Тел.: +7 (495) 495-95-95</span>
+          <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+          <div class="footer-nav">
+            <a class="main-nav-link footer-nav-link" href="#">Доставка</a>
+            <a class="main-nav-link footer-nav-link" href="#">Гарантия</a>
+            <a class="main-nav-link footer-nav-link" href="#">Контакты</a>
+          </div>
+          <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <!--Контейнер с чертой, кнопками соцсетей, ссылкой на HTML academy-->
         <div class="footer-social">
           <div class="stroke stroke-yellow"></div>
           <div class="footer-social-items">
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-            <a class="social-btn social-btn-twi" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-insta" href="#"></a>
+            <a class="social-btn social-btn-twi" href="#"></a>
           </div>
           <div class="footer-copyright">
             <a class="footer-copyright-link"

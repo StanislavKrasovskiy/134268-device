@@ -1,18 +1,16 @@
 /*Поле поиска, ссылки: на профиль, войти/выйти, сравнить, корзина*/
 .user-block {
-  font-size: 0;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   width: auto;
+  font-size: 0;
 
-
-  background-color: rgba(76, 175, 80, 0.3);
 }
 
 /*Оформление ссылок*/
 .user-block a {
-  font: 300 15px / 30px OpenSans, sans-serif;
-  color: #464646;
+  font: 300 15px / 30px 'Open Sans', sans-serif;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -24,33 +22,81 @@
 .user-block-search {
   display: inline-block;
   vertical-align: top;
-  margin-right: 400px;
+  min-width: 441px;
+  min-height: 49px;
+  margin-right: 96px;
 }
 
-/*Ссылка войти/выйти*/
+/*Ссылка войти*/
 .user-block-login {
   display: inline-block;
   vertical-align: top;
   margin-right: 240px;
 }
 
+.user-block-login:hover {
+  opacity: 0.6;
+}
+
+.user-block-login:active {
+  opacity: 0.3;
+}
+
+/*Ссылка в личный кабинет*/
 .user-block-person {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 20px;
 }
 
+.user-block-person:hover {
+  opacity: 0.6;
+}
+
+.user-block-person:active {
+  opacity: 0.3;
+}
+
+/*Ссылка выйти*/
 .user-block-logout {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 84px;
+}
+
+.user-block-logout:hover {
+  opacity: 0.6;
+}
+
+.user-block-logout:active {
+  opacity: 0.3;
 }
 
 /*Ссылка сравнить*/
 .user-block-compare {
   display: inline-block;
   vertical-align: top;
-  margin-right: 78px;
+  margin-right: 60px;
+}
+
+.user-block-compare:hover {
+  opacity: 0.6;
+}
+
+.user-block-compare:active {
+  opacity: 0.3;
 }
 
 /*Ссылка корзина*/
 .user-block-basket {
   display: inline-block;
   vertical-align: top;
+}
+
+.user-block-basket:hover {
+  opacity: 0.6;
+}
+
+.user-block-basket:active {
+  opacity: 0.3;
 }
