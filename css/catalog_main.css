@@ -1,21 +1,18 @@
 .page-main-container {
   width: 100%;
   margin: 0 auto;
-
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
 }
 
 /*Заголовок каталога*/
 .main-title {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-top: 33px;
+  margin-bottom: 15px;
   padding: 0 60px;
   width: 1160px;
-  font: 800 47px / 56.4px Gilroy, sans-serif;
+  font: 800 47px / 56.4px 'Gilroy', sans-serif;
   letter-spacing: 0.47px;
   color: rgba(0, 0, 0, 1);
-
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
 }
 
 /*Хлебные крошки под заголовком*/
@@ -27,18 +24,26 @@
   padding: 0 60px;
   list-style-type: none;
   font-size: 0;
-
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
 }
 
 .breadcrumbs-item {
+  opacity: 0.3;
   display: inline-block;
   vertical-align: top;
   margin-right: 20px;
 }
 
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.1;
+}
+
 .breadcrumbs-item a {
   position: relative;
+  margin-right: 10px;
   font: 300 14px / 36px 'Open Sans', sans-serif;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3);
@@ -47,7 +52,7 @@
 
 .breadcrumbs-item a::after {
   position: absolute;
-  right: -20px;
+  right: -27px;
   display: inline-block;
   content: "〉";
   font: 400 14px / 36px 'Open Sans', sans-serif;
@@ -56,29 +61,44 @@
 
 .breadcrumbs-item p {
   margin: 0;
-  font: 300 14px / 36px OpenSans, sans-serif;
+  font: 300 14px / 36px 'Open Sans', sans-serif;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3)
 }
 
 /*Контейнер с фильтром, сортировкой, пагинацией*/
 .catalog {
+  position: relative;
   margin: 0 auto;
   padding: 0;
-  padding-left: 60px;
   width: 1160px;
   font-size: 0;
+}
 
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
+.catalog-filter-side {
+  position: absolute;
+  left: -100px;
+  width: 468px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.filter-title {
+  padding: 30px 60px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(219, 219, 219, 1)
 }
 
 /*Блок с формой фильтрации*/
 .catalog-filter {
   display: inline-block;
   vertical-align: top;
-  margin-right: 60px;
-  width: 143px;
+  width: 300px;
   background-color: rgba(239, 239, 239, 1);
+}
+
+.form-filter {
+  padding-left: 60px;
 }
 
 .form-filter span{
@@ -94,7 +114,7 @@
 /*Заголовок фильтра*/
 .filter-title {
   margin: 0;
-  font: 800 16px / 19.2px Gilroy, sans-serif;
+  font: 800 16px / 19.2px 'Gilroy', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.2px;
   color: rgba(0, 0, 0, 1)
@@ -102,7 +122,7 @@
 
 .filter-txt {
   padding-top: 10px;
-  font: 800 18px / 21.6px Gilroy, sans-serif;
+  font: 800 18px / 21.6px 'Gilroy', sans-serif;
   letter-spacing: 0.18px;
   color: rgba(0, 0, 0, 1);
   border-top: 2px solid rgba(0, 0, 0, 1);
@@ -116,17 +136,15 @@
 .catalog-content {
   display: inline-block;
   vertical-align: top;
-  padding-left: 70px;
-  width: 897px;
-
-  background-color: rgba(76, 175, 80, 0.3); /*Удалить подсветку*/
+  width: 820px;
 }
 
 /*Инструменты сортировки*/
 .catalog-sort {
   display: block;
-  min-height: 70px;
+  height: 70px;
   margin: 0;
+  padding: 20px 60px;
   font-size: 0;
   background-color: rgba(0, 0, 0, 0.08)
 
@@ -135,10 +153,9 @@
 /*Заголовок сортировки*/
 .catalog-sort-title {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
   margin-right: 40px;
-  font: 800 16px / 19.2px Gilroy, sans-serif;
+  font: 800 16px / 19.2px 'Gilroy', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.2px;
   color: rgba(0, 0, 0, 1)
@@ -146,8 +163,8 @@
 
 .catalog-sort-menu {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
+  margin-right: 120px;
   padding-left: 0px;
   list-style-type: none;
   font-size: 0;
@@ -155,12 +172,11 @@
 
 .sort-menu-item {
   display: inline-block;
-  vertical-align: top;
   margin-right: 20px;
 }
 
 .sort-menu-item a {
-  font: 300 14px / 36px OpenSans, sans-serif;
+  font: 300 14px / 36px 'Open Sans', sans-serif;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
@@ -168,7 +184,6 @@
 
 .sort-menu-arrow-up {
   display: inline-block;
-  vertical-align: top;
   width: 17px;
   height: 9px;
   border: 10px solid transparent;
@@ -176,8 +191,9 @@
 }
 
 .sort-menu-arrow-down {
+  position: relative;
+  top: 8px;
   display: inline-block;
-  vertical-align: top;
   width: 17px;
   height: 9px;
   border: 10px solid transparent;
@@ -187,14 +203,85 @@
 /*Контейнер с выдачей товаров*/
 .catalog-items {
   display: block;
+  padding: 60px 0 60px 60px;
 }
 
 /*Карточка товара*/
+.item-inner {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.item-to-basket {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.item-to-basket-inner {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item-to-basket .btn {
+  /*display: none;*/
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+
+.btn-basket-txt-wrap {
+  position: relative;
+}
+
+.btn-stroke-basket {
+  position: absolute;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: block;
+  width: 200px;
+  height: 8px;
+  background-color: rgba(240, 197, 46, 1);
+  transition: height .2s;
+}
+
+.item-to-basket .btn:hover .btn-stroke-basket {
+  height: 100%;
+}
+
+.add-to-compare {
+  font: 300 13px / 36px 'Open Sans', sans-serif;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
 .catalog-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
+  width: 360px;
   margin-bottom: 40px;
   font-size: 0;
+}
+
+.catalog-item:hover {
+  cursor: pointer;
+}
+
+.catalog-item:hover .item-to-basket {
+  display: block;
 }
 
 .catalog-item:nth-of-type(odd) {
@@ -202,13 +289,14 @@
 }
 
 .catalog-item img {
-  margin-bottom: 30px;
+  display: block;
 }
 
 .item-name {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px;
+  margin-right: 10px;
+  width: 72%;
   font: 800 18px / 21.6px Gilroy, sans-serif;
   letter-spacing: 0.18px;
   color: rgba(0, 0, 0, 1);
@@ -216,6 +304,7 @@
 }
 
 .item-price {
+  float: right;
   display: inline-block;
   vertical-align: top;
   margin: 0;

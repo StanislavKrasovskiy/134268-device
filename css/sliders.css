@@ -28,7 +28,7 @@
   position: relative;
   display: none;
   width: auto;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   padding: 0 60px;
   font-size: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .slider-img img {
-  margin-left: 40px;
+  margin-left: 32px;
 }
 
 .slider-content {
@@ -72,14 +72,14 @@
 
 /*Описание в слайдере*/
 .slider-content-txt {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /*Заголовки на главной*/
 .index-content-header {
-  position: relative;
+  /*position: relative;*/
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font: 800 47px / 56.4px 'Gilroy', sans-serif;
   letter-spacing: 0.47px;
   color: #000000;
@@ -88,8 +88,8 @@
 /*Порядковый номер (слайдер)*/
 .slider-number {
   position: absolute;
-  top: -40px;
-  right: 62px;
+  top: -30px;
+  right: 52px;
   font: 800 179.2px / 215.04px 'Gilroy', sans-serif;
   letter-spacing: 1.792px;
   color: #ffffff;

@@ -21,6 +21,7 @@
   bottom: 18px;
   width: 163px;
   height: 35px;
+  margin-bottom: -5px;
 }
 
 .header-logo:hover {

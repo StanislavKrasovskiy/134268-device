@@ -25,6 +25,58 @@
   clear: both;
 }
 
+.about-us-txt {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.find-us-txt {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-us-trans-partners {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  list-style-type: none;
+}
+
+.info-contacts-about .btn {
+  margin-left: 12px;
+}
+
+.trans-partners-item {
+font: 800 16px / 40px 'Gilroy', sans-serif;
+color: #000000;
+}
+
+.trans-partners-item::before {
+  opacity: 0.3;
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 16px;
+  margin-top: 15px;
+  background-image: url('../img/sprites.png');
+  background-repeat: no-repeat;
+  background-position: -269px -21px;
+	width: 12px;
+	height: 12px;
+}
+
+.find-us-map img {
+  margin-bottom: 54px;
+}
+
+.info-contacts-find-us .btn {
+  margin-left: 30px;
+}
+
+.btn:hover .btn-stroke-about {
+  height: 100%;
+}
+
 .find-us-map-popup {
   display: none;
   position: fixed;

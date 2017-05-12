@@ -54,11 +54,12 @@
   left: 50%;
 }
 
-.popular-link-square img:nth-of-type(2) {
+.popular-link-square img.popular-img-bottom {
   position: absolute;
+  top: auto;
   bottom: 0;
-  transform: translateX(-50%);
   left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .popular-item:hover .popular-link-square {

@@ -1,7 +1,6 @@
 @import "header.css";
 @import "user_block.css";
 @import "main_nav2.css";
-@import "page_main.css";
 @import "sliders.css";
 @import "popular.css";
 @import "services.css";
@@ -57,6 +56,10 @@ body {
   box-sizing: border-box;
 }
 
+.page-main {
+  width: auto;
+}
+
 .icon-search,
 .icon-user,
 .icon-compare,
@@ -85,7 +88,7 @@ body {
 }
 
 .icon-compare{
-	background-position: -120px -21px ;
+	background-position: -120px -21px;
 	width: 10px;
 	height: 10px;
 }

@@ -10,14 +10,19 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <img class="header-logo" src="img/logo-device.svg"
-        width="162" height="35" alt="Возможно лучший магазин для гиков)">
+        <a href="/">
+          <img class="header-logo" src="img/logo-device.svg"
+          width="163" height="35" alt="Возможно лучший магазин для гиков)">
+        </a>
         <!--Контейнер с полем поиска, ссылками:
         на профиль, выйти, сравнить, корзина-->
         <div class="user-block">
-          <input class="user-block-search" type="text" name="search"
-          value="Поиск по сайту">
-          <a class="btn-search" href="#">Найти</a> <!--?Кнопка Найти уникальная?-->
+          <div class="user-block-search-wrap">
+            <span class="user-block-search-ico"></span>
+            <input class="user-block-search" type="text" name="search"
+            placeholder="Поиск по сайту">
+            <a class="btn-search" href="#">Найти</a>
+          </div>
           <a class="user-block-person" href="#">Валентин Петухов</a>
           <a class="user-block-logout user-block-logout-active" href="#">Выйти</a>
           <a class="user-block-compare" href="#">Сравнить</a>
@@ -28,9 +33,7 @@
           <ul class="main-nav-items">
             <li class="main-nav-item">
               <div class="main-nav-link-main">
-                <a class="main-nav-link" href="#">Каталог товаров</a>
-                <input class="catalog-menu catalog-menu-active" type="checkbox"
-                name="plus">
+                <a class="main-nav-link main-nav-link-plus" href="#">Каталог товаров</a>
               </div>
               <!--Выпадающее меню-->
               <div class="main-nav-link-sub">
@@ -93,11 +96,15 @@
         <!--Контейнер с формой фильтрации, инструментами сортировки,
         отсортированными товарами, пагинацией-->
         <div class="catalog">
+          <div class="catalog-filter-side">
+          </div>
+
           <!--Контейнер с формой фильтрации-->
           <div class="catalog-filter">
+
             <!--Форма с параметрами фильтрации-->
+            <div class="filter-title">Фильтр:</div>
             <form class="form-filter" method="get">
-              <p class="filter-title">Фильтр:</p>
               <p class="filter-txt">Стоимость</p>
               <!--Слайдер задает критерии по цене-->
               <div class="filter-slider">
@@ -175,8 +182,20 @@
               <!--Карточка товара-->
               <div class="catalog-item">
                 <!--Картинка товара-->
-                <img class="item-img" src="img/catalog-item-1.jpg"
-                width="360" height="380" alt="Любительская селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                <div class="item-inner">
+                  <img class="item-img" src="img/catalog-item-1.jpg"
+                  width="360" height="380" alt="Любительская селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                  <div class="item-to-basket">
+                    <!--Кнопка В корзину-->
+                    <div class="item-to-basket-inner">
+                      <a class="btn">
+                        <div class="btn-stroke-basket"></div>
+                        <div class="btn-basket-txt-wrap">В корзину</div>
+                      </a>
+                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                </div>
                 <!--Название товара (ссылка)-->
                 <div class="item-txt">
                   <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
@@ -184,63 +203,86 @@
                   </a>
                   <p class="item-price">500 руб.</p>
                 </div>
-                <div class="item-to-basket">
-                <a class="btn">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
               </div>
               <!--Карточка товара-->
               <div class="catalog-item">
-                <img class="item-img" src="img/catalog-item-2.jpg"
-                width="360" height="380" alt="Профессиональная селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                <div class="item-inner">
+                  <img class="item-img" src="img/catalog-item-2.jpg"
+                  width="360" height="380" alt="Профессиональная селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                  <div class="item-to-basket">
+                    <!--Кнопка В корзину-->
+                    <div class="item-to-basket-inner">
+                      <a class="btn">
+                        <div class="btn-stroke-basket">
+                        </div>
+                        <div class="btn-basket-txt-wrap">В корзину</div>
+                      </a>
+                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="item-txt">
                   <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
-                    Профессиональная селфи-палка
+                    Профессиональная<br>селфи-палка
                   </a>
                   <p class="item-price">1 500 руб.</p>
                 </div>
-                <div class="item-to-basket">
-                <a class="btn">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
               </div>
               <!--Карточка товара-->
               <div class="catalog-item">
-                <img class="item-img" src="img/catalog-item-3.jpg"
-                width="360" height="380" alt="Непотопляемая селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                <div class="item-inner">
+                  <img class="item-img" src="img/catalog-item-3.jpg"
+                  width="360" height="380" alt="Непотопляемая селфи-палка"> <!--При наведении на картинку, она фейдится-->
+                  <div class="item-to-basket">
+                    <!--Кнопка В корзину-->
+                    <div class="item-to-basket-inner">
+                      <a class="btn">
+                        <div class="btn-stroke-basket">
+                        </div>
+                        <div class="btn-basket-txt-wrap">В корзину</div>
+                      </a>
+                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="item-txt">
                   <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
                     Непотопляемая селфи-палка
                   </a>
                   <p class="item-price">2 500 руб.</p>
                 </div>
-                <div class="item-to-basket">
-                <a class="btn">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
                 <div class="new-sign"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
                 </div>
               </div>
               <!--Карточка товара-->
               <div class="catalog-item">
-                <img class="item-img" src="img/catalog-item-4.jpg"
-                width="360" height="380" alt="Селфи-палка «Следуй за мной»"> <!--При наведении на картинку, она фейдится-->
+                <div class="item-inner">
+                  <img class="item-img" src="img/catalog-item-4.jpg"
+                  width="360" height="380" alt="Селфи-палка «Следуй за мной»"> <!--При наведении на картинку, она фейдится-->
+                  <div class="item-to-basket">
+                    <!--Кнопка В корзину-->
+                    <div class="item-to-basket-inner">
+                      <a class="btn">
+                        <div class="btn-stroke-basket">
+                        </div>
+                        <div class="btn-basket-txt-wrap">В корзину</div>
+                      </a>
+                      <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="item-txt">
                   <a class="item-name" href="#"> <!-- * 3.13 Ссылкой на отдельную страницу товара является только название товара (отдельную страницу верстать не нужно).-->
-                    Селфи-палка «Следуй за мной»
+                    Селфи-палка «Следуй<br>за мной»
                   </a>
                   <p class="item-price">4 900 руб.</p>
-                </div>
-                <div class="item-to-basket">
-                <a class="btn">В корзину</a>
-                <a class="add-to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="new-sign new-sign-active"> <!--* 3.15 У любого товара может быть метка «new»-->
                   New
@@ -274,34 +316,36 @@
         <!--Контейнер с лого, войти, сравнить, корзина-->
         <div class="footer-user-block">
           <a href="/">
-            <img class="footer-logo" src="img/logo-device.svg"
+            <img class="footer-logo" src="img/logo-device-footer.svg"
             width="162" height="35" alt="Возможно лучший магазин для гиков)">
           </a>
-          <a class="user-block-logout" href="#">Выйти</a>
-          <a class="user-block-compare" href="#">Сравнить</a>
-          <a class="user-block-basket" href="#">Корзина</a>
+          <a class="user-block-login footer-user-block-login" href="#">Выйти</a>
+          <a class="user-block-compare footer-user-block-compare" href="#">Сравнить</a>
+          <a class="user-block-basket footer-user-block-basket" href="#">Корзина</a>
         </div>
         <!--Контейнер с телефоном, пунктами меню-->
         <div class="footer-nav-contacts">
           <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-          <a class="footer-nav-link" href="#">Доставка</a>
-          <a class="footer-nav-link" href="#">Гарантия</a>
-          <a class="footer-nav-link" href="#">Контакты</a>
+          <div class="footer-nav">
+            <a class="main-nav-link footer-nav-link" href="#">Доставка</a>
+            <a class="main-nav-link footer-nav-link" href="#">Гарантия</a>
+            <a class="main-nav-link footer-nav-link" href="#">Контакты</a>
+          </div>
           <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <!--Контейнер с чертой, кнопками соцсетей, ссылкой на HTML academy-->
         <div class="footer-social">
           <div class="stroke stroke-yellow"></div>
           <div class="footer-social-items">
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-            <a class="social-btn social-btn-twi" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-insta" href="#"></a>
+            <a class="social-btn social-btn-twi" href="#"></a>
           </div>
           <div class="footer-copyright">
             <a class="footer-copyright-link"
             href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/icon-HTMLacademy-logo.svg"
-              width="27" height="34" alt="htmlacademy.ru">
+              <img src="img/icon-HTMLacademy-logo.png" width="27" height="34"
+              alt="htmlacademy.ru">
             </a>
           </div>
         </div>

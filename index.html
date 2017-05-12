@@ -14,9 +14,12 @@
         <!--Контейнер с полем поиска, ссылками:
         на профиль, выйти, сравнить, корзина-->
         <div class="user-block">
-          <input class="user-block-search" type="text" name="search"
-          value="Поиск по сайту">
-          <a class="btn-search" href="#">Найти</a>
+          <div class="user-block-search-wrap">
+            <span class="user-block-search-ico"></span>
+            <input class="user-block-search" type="text" name="search"
+            placeholder="Поиск по сайту">
+            <a class="btn-search" href="#">Найти</a>
+          </div>
           <a class="user-block-login" href="#">Войти</a>
           <a class="user-block-compare" href="#">Сравнить</a>
           <a class="user-block-basket" href="#">Корзина</a>
@@ -26,9 +29,7 @@
           <ul class="main-nav-items">
             <li class="main-nav-item">
               <div class="main-nav-link-main">
-                <a class="main-nav-link" href="#">Каталог товаров</a>
-                <input class="catalog-menu catalog-menu-active" type="checkbox"
-                name="plus">
+                <a class="main-nav-link main-nav-link-plus" href="#">Каталог товаров</a>
               </div>
               <!--Выпадающее меню-->
               <div class="main-nav-link-sub">
@@ -141,11 +142,11 @@
                 в себе силы не пропускать занятия и соблюдать диету.
               </p>
               <!--Ссылка Подробнее с оформлением-->
-              <div class="btn-wrap">
-                <a class="btn" href="#">Подробнее</a>
+              <a class="btn" href="#">
                 <div class="btn-stroke">
                 </div>
-              </div>
+                Подробнее
+              </a>
               <table class="slider-table">
                 <tr>
                   <td>48 часов</td>
@@ -172,11 +173,11 @@
                 квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
                 <!--Ссылка Подробнее с оформлением-->
-                <div class="btn-wrap">
-                  <a class="btn" href="#">Подробнее</a>
+                <a class="btn" href="#">
                   <div class="btn-stroke">
                   </div>
-                </div>
+                  Подробнее
+                </a>
               <table class="slider-table">
                 <tr>
                   <td>800 м</td>
@@ -207,7 +208,7 @@
             <li class="popular-item">
               <a class="popular-link" href="#">
                 <div class="popular-link-square">
-                  <img src="img/index-popular-item-2.png" width="86" height="117"
+                  <img class="popular-img-bottom" src="img/index-popular-item-2.png" width="86" height="117"
                   alt="Моноподы для селфи">
                 </div>
                 <p>Моноподы для&nbsp;селфи</p>
@@ -253,7 +254,7 @@
         </div>
       </div>
       <!--Доставка Гарантия Кредит-->
-      <div class="services-position"> <!--?Для этого контейнера будем прописывать серый фон?-->
+      <div class="services-position">
         <div class="services-back">
         </div>
         <div class="services-container">
@@ -262,14 +263,18 @@
               <a class="btn btn-services-active">Доставка</a>
             </li>
             <li class="services-item">
-              <a class="btn" href="#">Гарантия</a>
-              <div class="btn-stroke btn-stroke-services">
-              </div>
+              <a class="btn" href="#">
+                <div class="btn-stroke-services">
+                </div>
+                Гарантия
+              </a>
             </li>
             <li class="services-item">
-              <a class="btn" href="#">Кредит</a>
-              <div class="btn-stroke btn-stroke-services">
-              </div>
+              <a class="btn" href="#">
+                <div class="btn-stroke-services">
+                </div>
+                Кредит
+              </a>
             </li>
           </ul>
           <div id="services-slider-1" class="services-slide">
@@ -353,7 +358,11 @@
                 ЖелДорЭкспедиция
               </li>
             </ul>
-            <a class="btn" href="#">Подробнее о нас</a>
+            <a class="btn" href="#">
+              <div class="btn-stroke-about">
+              </div>
+              Подробнее о нас
+            </a>
           </div>
           <!--Контакты-->
           <div class="info-contacts-find-us">
@@ -372,9 +381,12 @@
             <div class="find-us-map-popup">
               <img src="img/index-map-popup-2.jpg" width="960" height="559"
               alt="Карта">
-              <a class="btn btn-close"></a>
             </div>
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="btn" href="#">
+              <div class="btn-stroke-about">
+              </div>
+              Напишите нам
+            </a>
             <!--Контейнер с формой обратной связи-->
             <div class="form-write-us-card">
               <!--Закрыть форму-->
@@ -432,7 +444,7 @@
           <div class="footer-copyright">
             <a class="footer-copyright-link"
             href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/icon-HTMLacademy-logo.svg" width="27" height="34"
+              <img src="img/icon-HTMLacademy-logo.png" width="27" height="34"
               alt="htmlacademy.ru">
             </a>
           </div>
